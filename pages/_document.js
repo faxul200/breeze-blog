@@ -6,6 +6,9 @@ export default function Document() {
       <Head>
         <meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_ADSENSE_CLIENT || ''} />
         <meta name="format-detection" content="telephone=no,address=no,email=no" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* Optional: PNG favicon fallback if provided */}
+        <link rel="icon" type="image/png" href="/faxul_favicon.png" />
       </Head>
       <body>
         <Main />
