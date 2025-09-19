@@ -117,7 +117,7 @@ export default function Layout({ children }) {
                 placeholder="글 제목 검색..."
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                style={{padding:'6px 12px', border:'1px solid #e2e8f0', borderRadius:6, fontSize:15, minWidth:140, height:'32px'}}
+                style={{padding:'6px 12px', border:'1px solid #e2e8f0', borderRadius:6, fontSize:16, minWidth:140, height:'32px'}}
               />
               <button type="submit" style={{padding:'6px 16px', border:'none', borderRadius:6, background:'#0ea5e9', color:'#fff', fontWeight:600, cursor:'pointer', height:'32px'}}>검색</button>
             </form>

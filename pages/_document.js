@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="ko">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="google-adsense-account" content={process.env.NEXT_PUBLIC_ADSENSE_CLIENT || ''} />
         <meta name="format-detection" content="telephone=no,address=no,email=no" />
         <link rel="icon" href="/favicon.ico" />
