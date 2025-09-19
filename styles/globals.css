@@ -319,10 +319,10 @@ a {
     grid-template-areas:
       'brand hamburger'
       'actions actions';
-    gap: 8px;
+    gap: 0; /* 헤더 세로 높이 축소 */
     height: auto !important;
     align-items: center;
-    padding: 10px 0;
+    padding: 6px 0; /* 상하 패딩 축소 */
   }
   .header-inner .brand { grid-area: brand; justify-self: start; }
   .header-inner .hamburger { grid-area: hamburger; justify-self: end; }
