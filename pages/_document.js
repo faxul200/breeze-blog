@@ -9,6 +9,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         {/* Optional: PNG favicon fallback if provided */}
         <link rel="icon" type="image/png" href="/faxul_favicon.png" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2930039630594930" crossOrigin="anonymous"></script>
       </Head>
       <body>
         <Main />
