@@ -332,27 +332,26 @@ a {
   .header-actions { display: none !important; }
   .header-actions[data-open="true"] { 
     display: flex !important; 
-    flex-direction: row; /* 한 줄 배치 */
-    align-items: center; 
-    gap: 12px; 
-    flex-wrap: wrap; /* 폭이 좁으면 자연스럽게 줄바꿈 */
+    flex-direction: column; /* 위아래 배치로 자연스럽게 */
+    align-items: stretch; 
+    gap: 8px !important; /* 인라인 gap 덮기 */
+    flex-wrap: nowrap;
   }
 
   /* 메뉴를 한 줄로 */
   .header-actions[data-open="true"] .nav-links {
-    width: auto; 
-    display: flex; 
-    align-items: center; 
-    gap: 12px; 
-    flex-wrap: nowrap; /* 최대한 한 줄 유지 */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
   }
 
   /* 검색도 같은 줄에 배치 가능하게 */
   .header-actions[data-open="true"] form {
-    width: auto; 
-    display: flex; 
-    gap: 8px; 
-    flex: 1 1 180px; /* 공간 남으면 확장 */
+    width: 100%;
+    display: flex;
+    gap: 8px;
   }
   .header-actions[data-open="true"] form input { 
     flex: 1 1 auto; 
