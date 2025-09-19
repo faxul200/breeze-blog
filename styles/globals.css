@@ -352,6 +352,9 @@ a {
     width: 100%;
     display: flex;
     gap: 8px;
+    /* 검색창만 위로 더 붙이고 아래는 여백 확보 */
+    margin-top: -6px;   /* 상단 간격 축소 (gap 일부 상쇄) */
+    margin-bottom: 12px;/* 하단 여백으로 시각적 균형 */
   }
   .header-actions[data-open="true"] form input { 
     flex: 1 1 auto; 
