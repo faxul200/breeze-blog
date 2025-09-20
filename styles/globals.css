@@ -199,6 +199,10 @@ a {
     margin: 20px 0;
     width: 100%;
     table-layout: fixed;
+    border: 1px solid #9ca3af;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
   }
   
   .post-content table th,
@@ -207,15 +211,18 @@ a {
     word-wrap: break-word;
     word-break: keep-all;
     line-height: 1.4;
+    border: 1px solid #d1d5db;
+    border-collapse: collapse;
   }
   
   /* 첫 번째 행이 헤더인 경우 (항목/내용 구조) */
   .post-content table tr:first-child th {
     font-size: 13px;
     font-weight: 600;
-    background: #f3f4f6;
+    background: #e5e7eb;
     text-align: center;
     vertical-align: middle;
+    border-bottom: 2px solid #9ca3af;
   }
   
   /* 첫 번째 행의 첫 번째 헤더 (항목) - 좁게 */
@@ -233,10 +240,12 @@ a {
   .post-content table tr:not(:first-child) td:first-child {
     font-size: 13px;
     font-weight: 600;
-    background: #f8f9fa;
+    background: #f3f4f6;
     width: 25%;
     text-align: center;
     vertical-align: middle;
+    border-right: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
   }
   
   /* 일반 행의 두 번째 셀 (내용) */
@@ -245,6 +254,8 @@ a {
     width: 75%;
     text-align: left;
     vertical-align: top;
+    background: #ffffff;
+    border-bottom: 1px solid #d1d5db;
   }
 }
 
