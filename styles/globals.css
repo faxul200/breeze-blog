@@ -197,31 +197,32 @@ a {
   .post-content table {
     font-size: 14px;
     margin: 20px 0;
-    display: block;
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    table-layout: fixed;
   }
   
   .post-content table th,
   .post-content table td {
-    padding: 12px 16px;
-    white-space: nowrap;
-    min-width: 80px;
+    padding: 12px 8px;
+    word-wrap: break-word;
+    word-break: keep-all;
+    line-height: 1.4;
   }
   
   .post-content table th {
     font-size: 13px;
     font-weight: 600;
     background: #f3f4f6;
-    position: sticky;
-    left: 0;
-    z-index: 1;
+    width: 30%;
+    text-align: center;
+    vertical-align: middle;
   }
   
   .post-content table td {
     font-size: 13px;
-    min-width: 120px;
+    width: 70%;
+    text-align: left;
+    vertical-align: top;
   }
 }
 
