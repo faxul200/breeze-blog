@@ -209,16 +209,28 @@ a {
     line-height: 1.4;
   }
   
-  .post-content table th {
+  /* 첫 번째 행이 헤더인 경우 (항목/내용 구조) */
+  .post-content table tr:first-child th {
     font-size: 13px;
     font-weight: 600;
     background: #f3f4f6;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  /* 일반 행의 첫 번째 셀 (항목명) */
+  .post-content table tr:not(:first-child) th,
+  .post-content table tr:not(:first-child) td:first-child {
+    font-size: 13px;
+    font-weight: 600;
+    background: #f8f9fa;
     width: 30%;
     text-align: center;
     vertical-align: middle;
   }
   
-  .post-content table td {
+  /* 일반 행의 두 번째 셀 (내용) */
+  .post-content table tr:not(:first-child) td:last-child {
     font-size: 13px;
     width: 70%;
     text-align: left;
