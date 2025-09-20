@@ -218,13 +218,23 @@ a {
     vertical-align: middle;
   }
   
+  /* 첫 번째 행의 첫 번째 헤더 (항목) - 좁게 */
+  .post-content table tr:first-child th:first-child {
+    width: 25%;
+  }
+  
+  /* 첫 번째 행의 두 번째 헤더 (내용) - 넓게 */
+  .post-content table tr:first-child th:last-child {
+    width: 75%;
+  }
+  
   /* 일반 행의 첫 번째 셀 (항목명) */
   .post-content table tr:not(:first-child) th,
   .post-content table tr:not(:first-child) td:first-child {
     font-size: 13px;
     font-weight: 600;
     background: #f8f9fa;
-    width: 30%;
+    width: 25%;
     text-align: center;
     vertical-align: middle;
   }
@@ -232,7 +242,7 @@ a {
   /* 일반 행의 두 번째 셀 (내용) */
   .post-content table tr:not(:first-child) td:last-child {
     font-size: 13px;
-    width: 70%;
+    width: 75%;
     text-align: left;
     vertical-align: top;
   }
