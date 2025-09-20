@@ -59,12 +59,14 @@ a {
   color: #333;
 }
 
-/* Detail page title: slightly larger than list card */
+/* Detail page title: 메인 제목 */
 .post-title-detail {
-  margin: 8px 0 6px;
-  font-size: 24px;
-  line-height: 1.4;
+  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 1.3;
   font-weight: 700;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
 }
 
 .post-content header + .post-content {
@@ -76,13 +78,17 @@ a {
 }
 
 .post-meta {
-  font-size: 12px;
-  color: #777;
-  margin-bottom: 12px;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+  font-weight: 500;
 }
 
 .muted {
-  color: var(--muted);
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .post-content {
@@ -103,25 +109,143 @@ a {
   margin: 0 auto;
 }
 
+/* 애플 스타일 블로그 콘텐츠 */
 .post-content p {
-  font-size: 16px;
-  line-height: 1.9;
-  margin: 14px 0;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 20px 0;
+  color: #1d1d1f;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 .post-content h2 {
-  margin: 28px 0 12px;
+  margin: 36px 0 18px;
   font-size: 22px;
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
 
 .post-content h3 {
-  margin: 22px 0 10px;
-  font-size: 18px;
+  margin: 28px 0 14px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+}
+
+.post-content h4 {
+  margin: 24px 0 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1d1d1f;
+  letter-spacing: -0.005em;
+  line-height: 1.4;
 }
 
 .post-content img {
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  margin: 24px 0;
+}
+
+/* 심플 모던 테이블 */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: #f8f9fa;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.post-content table th {
+  background: #e5e7eb;
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #9ca3af;
+}
+
+.post-content table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #d1d5db;
+  font-size: 15px;
+  color: #1f2937;
+  line-height: 1.5;
+  vertical-align: top;
+  background: #ffffff;
+}
+
+.post-content table tr:last-child td {
+  border-bottom: none;
+}
+
+.post-content table tr:hover {
+  background: #f8f9fa;
+}
+
+/* 모바일 반응형 테이블 */
+@media (max-width: 768px) {
+  .post-content table {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  
+  .post-content table th,
+  .post-content table td {
+    padding: 12px 16px;
+  }
+}
+
+/* 애플 스타일 리스트 */
+.post-content ul {
+  margin: 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.post-content li {
+  margin: 12px 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1d1d1f;
+}
+
+.post-content li::before {
+  content: "•";
+  color: #007aff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.post-content strong {
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+/* 애플 스타일 강조 박스 */
+.post-content blockquote {
+  margin: 24px 0;
+  padding: 20px 24px;
+  background: #f5f5f7;
+  border-left: 4px solid #007aff;
+  border-radius: 8px;
+  font-style: italic;
+  color: #1d1d1f;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .ads-slot {
