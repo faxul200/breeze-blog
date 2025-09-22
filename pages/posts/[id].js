@@ -31,7 +31,14 @@ export default function PostPage({ post }) {
         <meta property="og:description" content={desc} />
         <meta property="og:url" content={canonical} />
         {post.image_url ? (
-          <meta property="og:image" content={post.image_url} />
+          <meta
+            property="og:image"
+            content={
+              post.image_url.startsWith('http')
+                ? post.image_url
+                : `${siteUrl}${post.image_url.startsWith('/') ? '' : '/'}${post.image_url}`
+            }
+          />
         ) : null}
       </Head>
 
