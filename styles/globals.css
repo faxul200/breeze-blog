@@ -614,3 +614,19 @@ a {
   background: linear-gradient(90deg, #0369a1 0%, #0ea5e9 100%);
   box-shadow: 0 4px 16px rgba(2,132,199,0.18);
 }
+
+.post-content table th:first-child, .post-content table td:first-child {
+  white-space: nowrap;
+}
+.post-content table td:last-child, .post-content table th:last-child {
+  vertical-align: middle !important;
+}
+
+.post-content table td, .post-content table th {
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .post-content table td, .post-content table th {
+    vertical-align: top;
+  }
+}
