@@ -259,6 +259,28 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .post-content table {
+    table-layout: fixed;
+  }
+  .post-content table td:first-child, 
+  .post-content table th:first-child {
+    width: 35%;
+    min-width: 90px;
+    max-width: 120px;
+    word-break: keep-all;
+    background: #f3f4f6;
+    font-weight: 600;
+    text-align: left;
+  }
+  .post-content table td:last-child, 
+  .post-content table th:last-child {
+    width: 65%;
+    word-break: break-word;
+    text-align: left;
+  }
+}
+
 /* 애플 스타일 리스트 */
 .post-content ul {
   margin: 20px 0;
